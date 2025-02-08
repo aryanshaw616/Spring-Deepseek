@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emperor AI Chat</title>
+    <link rel="stylesheet" href="/css/ui.css">
+</head>
+<body>
+<div class="chat-container">
+    <h2>Emperor AI Chat</h2>
+    <div class="input-container">
+        <input type="text" id="question" placeholder="Ask something...">
+        <button onclick="sendPrompt()">Send</button>
+    </div>
+    <div class="response-wrapper" id="response-wrapper" onclick="toggleResponse()">
+        <span id="response-message">Generating...</span>
+        <div id="tick-mark" class="tick-mark">✔</div>
+    </div>
+    <div class="response-container" id="response-container"></div>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
